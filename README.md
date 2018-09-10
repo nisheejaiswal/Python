@@ -19,5 +19,6 @@
    - Rest API calls (requests module)
    - Sending email
    - Parsing json, XML
+   
 Sample programs should be written for each of the mentioned points from #2
 incorporating PEP8 coding standards.
