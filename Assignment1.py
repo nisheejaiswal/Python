@@ -45,26 +45,6 @@ def DeleteRequest():
     print(r)
 
 
-
-def HeadRequest():
-    # HTTP HEAD Request
-    r = requests.head('https://httpbin.org/get')
-    print(r)
-    s = r.text
-
-    with open("C://Data//HeadRequest.txt", "w") as f:
-        f.write(s)
-
-def OptionsRequest():
-    # HTTP OPTIONS Request
-    r = requests.options('https://httpbin.org/get')
-    print(r)
-    s = r.text
-
-    with open("C://Data//OptionsRequest.txt", "w") as f:
-        f.write(s)
-
-
 def PassingParam():
     # Passing Parameters In URLs
     payload = {'key1': 'value1', 'key2': 'value2'}
@@ -75,19 +55,12 @@ def PassingParam():
         f.write(s)
 
 
-
-
-
-
-
 def main():
     print("API Request Modules are as follows:-")
     FetchData()
     CreateNewResource()
     PutRequest()
     DeleteRequest()
-    HeadRequest()
-    OptionsRequest()
     PassingParam()
 
 
