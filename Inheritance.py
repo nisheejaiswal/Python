@@ -28,13 +28,4 @@ t.inputSides()
 t.displaySides()
 t.findArea()
 
-# To Check Inheritance there are two methods
-isinstance(t, Triangle)
-isinstance(t, Polygon)
-isinstance(t, int)
-isinstance(t, object)
-
-issubclass(Polygon,Triangle)
-issubclass(Triangle,Polygon)
-issubclass(bool,int)
 
